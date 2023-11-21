@@ -1,4 +1,4 @@
-import Cart from "./Cart";
+import CartPage from "./CartPage";
 import Checkout from "./Checkout";
 import ErrorPage from "./ErrorPage";
 import HomePage from "./HomePage";
@@ -8,7 +8,7 @@ import RegisterPage from "./RegisterPage";
 import SingleProduct from "./SingleProduct";
 
 export {
-    Cart,
+    CartPage,
     Checkout,
     HomePage,
     LoginPage,
