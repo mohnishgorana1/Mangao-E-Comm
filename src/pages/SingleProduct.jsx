@@ -13,8 +13,16 @@ function SingleProduct() {
   const {id} = useParams();
   const navigate = useNavigate();
 
-  const {} = useProductsContext()
+  const {
+    single_product_loading: loading,
+    single_product_error: error,
+    single_product: product,
+    fetchSingleProduct,
+  } = useProductsContext()
 
+  useEffect(() => {
+    fetchSingleProduct(`${url}${id}`)
+  }, [id])
   return (
     <div>
       

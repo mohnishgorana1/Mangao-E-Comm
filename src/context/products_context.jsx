@@ -52,12 +52,12 @@ export const ProductsProvider = ({ children }) => {
     }
   };
 
-  const fetchSingleProduct = async (products_url) => {
+  const fetchSingleProduct = async (url) => {
     dispatch({
       type: GET_SINGLE_PRODUCT_BEGIN,
     });
     try {
-      const response = await axios.get(products_url);
+      const response = await axios.get(url);
       const singleProduct = response.data;
       dispatch({
         type: GET_SINGLE_PRODUCT_SUCCESS,
