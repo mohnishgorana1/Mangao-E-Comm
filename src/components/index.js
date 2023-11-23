@@ -4,6 +4,9 @@ import Filters from "./Filters";
 import Sort from "./Sort";
 import ProductCard from './ProductCard'
 import ProductListing from "./ProductListing";
+import ProductImages from "./ProductImages";
+import Stars from "./Stars";
+import AddToCart from "./AddToCart";
 
 export {
     Navbar,
@@ -12,4 +15,7 @@ export {
     Sort,
     ProductCard,
     ProductListing,
+    ProductImages,
+    Stars,
+    AddToCart
 }
