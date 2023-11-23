@@ -16,7 +16,7 @@ function App() {
     <Router>
       <section className="align-element py-10">
         <Navbar />
-        <Sidebar />
+        {/* <Sidebar /> */}
         <section className="py-2 my-5">
           <Routes>
             <Route path="/" exact element={<HomePage />} />
