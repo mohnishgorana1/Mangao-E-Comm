@@ -25,12 +25,12 @@ function Filters() {
   const companies = getUniqueValues(all_products, "company");
   const colors = getUniqueValues(all_products, "colors");
 
-  console.log(categories);
-  console.log(companies);
-  console.log(colors);
+  // console.log(categories);
+  // console.log(companies);
+  // console.log(colors);
 
   return (
-    <div className="bg-base-300 px-3">
+    <div className="bg-base-300 px-3 rounded-lg">
       <form
         onSubmit={(e) => e.preventDefault()}
         className="flex flex-col items-start py-2 gap-y-4"
