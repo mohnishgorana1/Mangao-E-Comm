@@ -7,7 +7,7 @@ function Products() {
 
   return (
     <main className="flex flex-col sm:flex-row w-full  h-auto gap-2">
-      <div className="shadow-md rounded-lg shadow-primary">
+      <div className="shadow-md rounded-lg shadow-primary h-min">
         <Filters />
       </div>
       <div className="w-full ">
