@@ -9,6 +9,7 @@ import {
   RegisterPage,
   CartPage,
   Products,
+  PrivateRoute,
 } from "./pages";
 import { Navbar, Sidebar } from "./components";
 function App() {
@@ -21,11 +22,19 @@ function App() {
           <Routes>
             <Route path="/" exact element={<HomePage />} />
             <Route path="/cart" element={<CartPage />} />
-            <Route path="/checkout" element={<Checkout />} />
             <Route path="/products" element={<Products />} />
             <Route path="/products/:id" element={<SingleProduct />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/register" element={<RegisterPage />} />
+
+            <Route
+              path="checkout"
+              element={
+                <PrivateRoute>
+                  <Checkout />
+                </PrivateRoute>
+              }
+            />
 
             <Route path="*" element={<ErrorPage />} />
           </Routes>
