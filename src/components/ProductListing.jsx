@@ -27,7 +27,7 @@ function ProductListing() {
   }
 
   return (
-    <section className="py-6 border flex flex-col sm:flex-row flex-wrap gap-8 items-center justify-center  ">
+    <section className="py-6  flex flex-col sm:flex-row flex-wrap gap-8 items-center justify-center  ">
       {products.map((product) => {
         const {id, image, name, price, description} = product;
 
