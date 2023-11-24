@@ -1,6 +1,7 @@
 const conf ={
-    appwriteUrl: String(import.meta.env.VITE_APPWRITE_URL),
-    appwriteProjectId: String(import.meta.env.VITE_APPWRITE_PROJECT_ID),
+    STRIPE_SECRET_KEY: String(import.meta.env.VITE_STRIPE_SECRET_KEY),
+    STRIPE_PUBLISHABLE_KEY: String(import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY),
+
 }
 
 export default conf;
